@@ -1,5 +1,5 @@
 body {
-    margin: 0 80px 0 80px;
+    margin: 0 60px 0 65px;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
@@ -32,9 +32,20 @@ header {
     position: absolute;
 }
 
-.banner img {
+.banner img,
+.banner2 img {
     width: 100%;
     height: 100%;
+}
+
+.banner2 {
+    position: relative;
+}
+
+.banner2 div {
+    position: absolute;
+    top: 30%;
+    left: 60px;
 }
 
 .destaque {
@@ -65,7 +76,7 @@ header {
 
 .noticias {
     display: flex;
-    margin-top: 50px;
+    margin-top: 60px;
 }
 
 .noticias div,
@@ -73,6 +84,7 @@ header {
     margin-left: 24px;
     cursor: pointer;
     margin-bottom: 50px;
+    max-width: 279px;
 }
 
 .noticias div:first-child,
@@ -85,6 +97,7 @@ header {
     font-weight: 600;
     font-size: 20px;
     margin-bottom: 0;
+    margin-top: 30px;
 }
 
 .noticias p:last-of-type,
@@ -110,29 +123,87 @@ header {
 .titulo-negocios {
     font-weight: 600;
     font-size: 24px;
+    margin-bottom: 20px;
 }
 
 .negocios {
     display: flex;
 }
 
+.covid {
+    background-color: #e6e6e6;
+    margin: 0 30px 0 5px;
+    padding: 15px 0 10px 0;
+    text-align: center;
+}
+
+.covid h2 {
+    font-weight: 600;
+    font-size: 35px;
+    margin-bottom: 0;
+    margin-top: 10px;
+}
+
+.covid p {
+    font-size: 15px;
+    margin-top: 8px;
+}
+
+.covid a {
+    text-decoration: none;
+    font-weight: 600;
+    color: #000;
+    font-size: 15px;
+    border-bottom: 2px solid transparent;
+}
+
+.covid a:hover {
+    border-bottom: 2px solid #000;
+    transition: .2s;
+}
+
+.paginas {
+    display: flex;
+    margin-top: 50px;
+}
+
+.paginas img {
+    width: 28px;
+    height: 28px;
+    margin-left: 20px;
+}
+
+.paginas p {
+    color: rgba(0, 0, 0, .6);
+    margin-top: 2px;
+    font-size: 15px;
+}
+
 footer {
     background-color: #e6e6e6;
-    height: 200px;
+    margin: 0 -60px 0 -60px;
+    display: flex;
+    margin-top: 50px;
 }
 
-#footer a {
-    color: #000;
-    font-family: Arial, Helvetica, sans-serif;
+footer div {
+    max-width: 190px;
+    margin-left: 30px;
+}
+
+footer p {
+    font-weight: 600;
+    color: rgba(0, 0, 0, .6);
+}
+
+footer a {
     text-decoration: none;
-    padding: 20px;
-    margin: 40px;
+    color: #616161;
+    word-break: break-word;
+    font-size: 11px;
+    line-height: 30px
 }
 
-#footer p {
-    padding-top: 0%;
-}
-
-#footer {
-    float: center;
+footer ul {
+    list-style-type: none;
 }
