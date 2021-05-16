@@ -68,26 +68,32 @@ header {
     margin-top: 50px;
 }
 
-.noticias div {
+.noticias div,
+.negocios div {
     margin-left: 24px;
     cursor: pointer;
+    margin-bottom: 50px;
 }
 
-.noticias div:first-child {
+.noticias div:first-child,
+.negocios div:first-child {
     margin-left: 0px;
 }
 
-.noticias p:first-of-type {
+.noticias p:first-of-type,
+.negocios p:first-of-type {
     font-weight: 600;
     font-size: 20px;
     margin-bottom: 0;
 }
 
-.noticias p:last-of-type {
+.noticias p:last-of-type,
+.negocios p:last-of-type {
     margin-top: 0;
 }
 
-.noticias a {
+.noticias a,
+.negocios a {
     text-decoration: none;
     font-weight: 600;
     color: #0067B8;
@@ -95,9 +101,19 @@ header {
     border-bottom: 2px solid transparent;
 }
 
-.noticias a:hover {
+.noticias a:hover,
+.negocios a:hover {
     border-bottom: 2px solid #0067B8;
     transition: .2s;
+}
+
+.titulo-negocios {
+    font-weight: 600;
+    font-size: 24px;
+}
+
+.negocios {
+    display: flex;
 }
 
 footer {
